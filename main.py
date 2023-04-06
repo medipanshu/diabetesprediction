@@ -1,8 +1,8 @@
 from flask import Flask,render_template,request
 import joblib
 
-knn_model = joblib.load("D:/deepanshu/codes/Practice/diabetes/knn_model.pkl")
-lr_model = joblib.load("D:/deepanshu/codes/Practice/diabetes/lr_model.pkl")
+knn_model = joblib.load("knn_model.pkl")
+lr_model = joblib.load("lr_model.pkl")
 
 app = Flask(__name__)
 

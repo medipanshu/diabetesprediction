@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Diabetes Predection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+<div id ='div-body'>
+    <div id="div-section" class="clearfix">
+        <div id = 'div-form'>
+            <div style = "line-height:40px; min-height:20px; margin-top:5px"><h1><center>Diabetes Predection</center></h1></div>
+            <form method="post" action="/">
+                <div style = "min-height:200px; margin:10px"><center>
+                    <input type="number" name="pregnancies" placeholder="Number of pregnancies">
+                    <input type="number" name="glucose" placeholder="Enter amount of glucose"><br>
+                    <input type="number" name="blood_pressure" placeholder="Enter Blood Pressure">
+                    <input type="number" name="SkinThickness" placeholder="Enter Skin Thickness"><br>
+                    <input type="number" name="insulin" placeholder="Enter insulin level">
+                    <input type="number" name="BMI" placeholder="Enter body mass index"><br>
+                    <input type="number" name="pedigree" placeholder="Diabetes pedigree function">
+                    <input type="number" name="age" placeholder="Enter your age"><br>
+                    <input type="radio" name = 'model' value="KNN">
+                        <label for="KNN" style="padding-right: 120px;">KNN</label>
+                    <input type="radio" name = 'model' value="Logestic Regression" >   
+                        <label for="Logestic Regression">Logestic Regression</label><br></center>
+                    <!-- <input type="submit"> -->
+                </div>
+                <div style = "min-height:20px; margin:10px;"><center>
+                    <button type="submit">Predict</button></center>
+                </div>
+            </form>
+            <div style = "min-height:20px;margin-top:30px ;">
+                <center><h2><i>{{ predict }}</i></h2></center>
+            </div>
+        </div>
+        <div id="div-image"></div>
+    </div>
+</div>
+</body>
+</html>
