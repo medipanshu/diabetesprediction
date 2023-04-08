@@ -13,15 +13,15 @@
             <div style = "line-height:40px; min-height:20px; margin-top:5px"><h1><center>Diabetes Predection</center></h1></div>
             <form method="post" action="/">
                 <div style = "min-height:200px; margin:10px"><center>
-                    <input type="number" name="pregnancies" placeholder="Number of pregnancies">
-                    <input type="number" name="glucose" placeholder="Enter amount of glucose"><br>
-                    <input type="number" name="blood_pressure" placeholder="Enter Blood Pressure">
-                    <input type="number" name="SkinThickness" placeholder="Enter Skin Thickness"><br>
-                    <input type="number" name="insulin" placeholder="Enter insulin level">
-                    <input type="number" name="BMI" placeholder="Enter body mass index"><br>
-                    <input type="number" name="pedigree" placeholder="Diabetes pedigree function">
-                    <input type="number" name="age" placeholder="Enter your age"><br>
-                    <input type="radio" name = 'model' value="KNN">
+                    <input type="number" name="pregnancies" placeholder="Number of pregnancies" required>
+                    <input type="number" name="glucose" placeholder="Enter amount of glucose" required<br>
+                    <input type="number" name="blood_pressure" placeholder="Enter Blood Pressure" required>
+                    <input type="number" name="SkinThickness" placeholder="Enter Skin Thickness" required><br>
+                    <input type="number" name="insulin" placeholder="Enter insulin level" required>
+                    <input type="number" name="BMI" placeholder="Enter body mass index" required><br>
+                    <input type="number" name="pedigree" placeholder="Diabetes pedigree function" required>
+                    <input type="number" name="age" placeholder="Enter your age" required><br>
+                    <input type="radio" name = 'model' value="KNN" required>
                         <label for="KNN" style="padding-right: 120px;">KNN</label>
                     <input type="radio" name = 'model' value="Logestic Regression" >   
                         <label for="Logestic Regression">Logestic Regression</label><br></center>
